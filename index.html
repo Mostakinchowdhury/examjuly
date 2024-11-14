@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator-by-gride</title>
+  <link rel="stylesheet" href="calculatorbygride.css">
+  <link rel="stylesheet" href="calculatorresponse.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <input type="text" id="display" disabled>
+      <button id="btnper" onclick="display.value+='%';mysound.play()">%</button>
+      <button id="btnsquar" onclick="display.value+='';mysound.play()">x<sup>2</sup></button>
+      <button id="btncut" onclick="display.value='';mysound.play()">CA</button>
+      <button id="btnerase" onclick="mysound.play()"><i class=" fa-solid fa-delete-left"></i></button>
+      <button id="btn7" onclick="display.value+='7';mysound.play()">7</button>
+      <button id="btn8" onclick="display.value+='8';mysound.play()">8</button>
+      <button id="btn9" onclick="display.value+='9';mysound.play()">9</button>
+      <button id="btnvag" onclick="display.value+='/';mysound.play()">/</button>
+      <button id="btn4" onclick="display.value+='4';mysound.play()">4</button>
+      <button id="btn5" onclick="display.value+='5';mysound.play()">5</button>
+      <button id="btn6" onclick="display.value+='6';mysound.play()">6</button>
+      <button id="btnbiyog" onclick="display.value+='-';mysound.play()">-</button>
+      <button id="btn1" onclick="display.value+='1';mysound.play()">1</button>
+      <button id="btn2" onclick="display.value+='2';mysound.play()">2</button>
+      <button id="btn3" onclick="display.value+='3';mysound.play()">3</button>
+      <button id="btnjog" onclick="display.value+='+';mysound.play()">+</button>
+      <button id="btnintu" onclick="display.value+='*';mysound.play()">*</button>
+      <button id="btnziro" onclick="display.value+='0';mysound.play()">0</button>
+      <button id="btnpoin" onclick="display.value+='.';mysound.play()">.</button>
+      <button id="btnequal" onclick="display.value=eval(display.value);mysound.play()">=</button>
+      <audio src=" done.mp3" style="display: none;" id="mysound"></audio>
+      <audio src="mysound2.m4a" style="display: none;" id="mysound2"></audio>
+    </div>
+  </section>
+  <script src="calculatorbygride.js"></script>
+</body>
+
+</html>

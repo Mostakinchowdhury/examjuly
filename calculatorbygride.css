@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Courier New', Courier, monospace; */
+  box-sizing: border-box;
+}
+:root {
+  --btncolor: #27ae60;
+  --calbg: #7ed6df;
+  --otherbg: #130f40;
+}
+
+body {
+  background: url(mebg.png) center;
+  background-attachment: fixed;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(52, 73, 94, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .container input,
+section .container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 25px;
+  background-color: var(--btncolor);
+}
+
+section .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+  grid-gap: 5px;
+  /* border: 1px solid #000; */
+  border-radius: 15px;
+  padding: 10px;
+  width: 25vw;
+  height: 60vh;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 3px 10px 10px var(--btncolor), 5px 7px 20px 15px var(--calbg),
+    10px 15px 60px 30px var(--otherbg);
+}
+section .container input {
+  grid-column: 1/-1;
+  grid-row: 1 / span 3;
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+}
+section .container button {
+  border-radius: 20px;
+  grid-row: auto / span 2;
+}
+section .container button:active {
+  background-color: var(--otherbg);
+}
