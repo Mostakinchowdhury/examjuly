@@ -28,67 +28,7 @@ erase.addEventListener('click', function () {
 squar.addEventListener('click', function () {
   display.value = Math.pow(display.value, 2);
 });
-// document.addEventListener('keydown', function (event) {
-//   switch (event.key) {
-//     case '7':
-//       btn7.click();
 
-//       break;
-//     case '8':
-//       btn8.click();
-//       break;
-//     case '9':
-//       btn9.click();
-//       break;
-//     case '4':
-//       btn4.click();
-//       break;
-//     case '5':
-//       btn5.click();
-//       break;
-//     case '6':
-//       btn6.click();
-//       break;
-//     case '1':
-//       btn1.click();
-//       break;
-//     case '2':
-//       btn2.click();
-//       break;
-//     case '3':
-//       btn3.click();
-//       break;
-//     case '0':
-//       btnziro.click();
-//       break;
-//     case '.':
-//       btnpoin.click();
-//       break;
-//     case '*':
-//       btnintu.click();
-//       break;
-//     case '+':
-//       btnjog.click();
-//       break;
-//     case '-':
-//       btnbiyog.click();
-//       break;
-//     case '/':
-//       btnvag.click();
-//       break;
-//     case 'Backspace':
-//       erase.click();
-//       break;
-//     case 'Enter':
-//       btnequal.click();
-//       break;
-//     case 'Delete':
-//       btncut.click();
-//       break;
-//     default:
-//       break;
-//   }
-// });
 document.addEventListener('keydown', function (event) {
   switch (event.key) {
     case '7':
